@@ -1,0 +1,21 @@
+<?php
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+?>
+<div id="newsletter-popup">
+    <div class="content">
+        <?php echo $block->getChildHtml('popup.text') ?>
+        <?php echo $block->getChildHtml('subscribe.new') ?>
+    </div>
+</div>
+<script type="text/x-magento-init">
+{
+    "#newsletter-popup": {
+        "newsletterpopup": {
+        "buttons":[],
+        "modalClass": "newsletter-popup-window",
+        "title": "Sign Up for Exclusive Offers"
+        }
+    }
+}
+</script>
+

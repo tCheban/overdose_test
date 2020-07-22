@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block name="form.subscribe.popup" as="form.subscribe.popup" before="-" template="Magento_Newsletter::subscribe-popup.phtml">
+                <block class="Magento\Cms\Block\Block" name="newsletter.popup.text" as="popup.text">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">newsletter-popup-text</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.new" as="subscribe.new" before="-" template="Magento_Newsletter::subscribe.phtml" ifconfig="newsletter/general/active"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
