@@ -9,7 +9,7 @@ Don`t included logic:
 CMS Block code
 ID: newsletter-popup-text
 Code: 
-<div class="newsletter-popup-text-block">
+"<div class="newsletter-popup-text-block">
 <h2 class="discount-message-label">Get 10% off</h2>
 <p class="discount-message-text">Your first order</p>
-</div>
+</div>"
